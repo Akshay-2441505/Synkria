@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communities | Synkria</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/communities.css">
+    <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body style="background-color: #121212; color: #F2F2F2;">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="logo-animation">
+                <i class="fas fa-network-wired"></i>
+                <span>Synkria</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="navbar-brand-text">Synkria</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="communities.html">Communities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="networking.html">Networking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recruitment.html">Recruitment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+                
+                <div class="navbar-actions">
+                    <div class="notification-bell">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">3</span>
+                    </div>
+                    <div class="user-profile">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face" alt="Profile">
+                        <span>John Doe</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <button class="btn btn-primary cta-btn">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="communities-hero" id="communitiesHero">
+        <div class="hero-background hero-bg-fade">
+            <div class="gradient-overlay"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+            <div class="particles" id="communitiesParticles"></div>
+        </div>
+        
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <div class="hero-badge" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-users"></i>
+                            <span>Join 1,200+ active learning communities</span>
+                        </div>
+                        
+                        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+                            Learning
+                            <span class="gradient-text">Communities</span>
+                            <br>That Inspire
+                        </h1>
+                        
+                        <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
+                            Connect with passionate educators and learners worldwide. Share knowledge, collaborate on projects, and grow together in vibrant learning communities.
+                        </p>
+                        
+                        <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="1247">0</div>
+                                <div class="stat-label">Active Communities</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="52891">0</div>
+                                <div class="stat-label">Community Members</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="8432">0</div>
+                                <div class="stat-label">Shared Resources</div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
+                            <button class="btn btn-primary btn-lg hero-btn-primary">
+                                <span>Explore Communities</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <button class="btn btn-outline-light btn-lg hero-btn-secondary">
+                                <i class="fas fa-plus"></i>
+                                <span>Create Community</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="hero-visual" data-aos="fade-left" data-aos-delay="600">
+                        <div class="communities-showcase">
+                            <div class="community-card main-card">
+                                <div class="card-header">
+                                    <div class="community-avatar">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="community-info">
+                                        <h4>Web Development Hub</h4>
+                                        <p>2,347 members • Very Active</p>
+                                    </div>
+                                    <div class="join-btn">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p>Learn modern web technologies, share projects, and collaborate with fellow developers worldwide.</p>
+                                    <div class="community-tags">
+                                        <span class="tag">JavaScript</span>
+                                        <span class="tag">React</span>
+                                        <span class="tag">Node.js</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="floating-community-card card-1">
+                                <div class="mini-avatar">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="mini-info">
+                                    <h6>AI & ML</h6>
+                                    <span>1,823 members</span>
+                                </div>
+                            </div>
+                            
+                            <div class="floating-community-card card-2">
+                                <div class="mini-avatar">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <div class="mini-info">
+                                    <h6>Design Masters</h6>
+                                    <span>1,456 members</span>
+                                </div>
+                            </div>
+                            
+                            <div class="floating-community-card card-3">
+                                <div class="mini-avatar">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="mini-info">
+                                    <h6>Data Science</h6>
+                                    <span>987 members</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-text">Discover communities</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search & Filters Section -->
+    <section class="search-section" id="searchSection">
+        <div class="container">
+            <div class="search-container" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="search-box-wrapper">
+                            <div class="search-box">
+                                <i class="fas fa-search search-icon"></i>
+                                <input type="text" class="search-input" placeholder="Search communities, topics, or skills..." id="communitySearch">
+                                <button class="search-btn">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filters-row" data-aos="fade-up" data-aos-delay="200">
+                    <div class="filter-group">
+                        <label>Category</label>
+                        <select class="filter-select" id="categoryFilter">
+                            <option value="all">All Categories</option>
+                            <option value="technology">Technology</option>
+                            <option value="design">Design</option>
+                            <option value="business">Business</option>
+                            <option value="science">Science</option>
+                            <option value="arts">Arts</option>
+                            <option value="language">Language</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>Activity Level</label>
+                        <select class="filter-select" id="activityFilter">
+                            <option value="all">All Activity Levels</option>
+                            <option value="very-active">Very Active</option>
+                            <option value="active">Active</option>
+                            <option value="moderate">Moderate</option>
+                            <option value="new">New</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>Size</label>
+                        <select class="filter-select" id="sizeFilter">
+                            <option value="all">All Sizes</option>
+                            <option value="large">Large (1000+)</option>
+                            <option value="medium">Medium (100-999)</option>
+                            <option value="small">Small (10-99)</option>
+                            <option value="intimate">Intimate (1-9)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>Sort By</label>
+                        <select class="filter-select" id="sortFilter">
+                            <option value="members">Most Members</option>
+                            <option value="activity">Most Active</option>
+                            <option value="newest">Newest</option>
+                            <option value="name">Name A-Z</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Communities -->
+    <section class="featured-section" id="featuredSection">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Featured Communities</span>
+                </div>
+                <h2 class="section-title">
+                    Trending
+                    <span class="gradient-text">Communities</span>
+                </h2>
+                <p class="section-description">
+                    Discover the most popular and active learning communities on our platform.
+                </p>
+            </div>
+            
+            <div class="featured-grid" id="featuredGrid">
+                <!-- Featured communities will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- All Communities -->
+    <section class="communities-section" id="communitiesSection">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h2 class="section-title">
+                            All <span class="gradient-text">Communities</span>
+                        </h2>
+                        <p class="section-description">
+                            Browse through all available communities and find your perfect learning group.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <div class="view-options">
+                            <button class="view-btn active" data-view="grid">
+                                <i class="fas fa-th"></i>
+                            </button>
+                            <button class="view-btn" data-view="list">
+                                <i class="fas fa-list"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="communities-grid" id="communitiesGrid">
+                <!-- Communities will be dynamically loaded here -->
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up">
+                <button class="btn btn-outline-primary btn-lg" id="loadMoreCommunities">
+                    <span>Load More Communities</span>
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Create Community CTA -->
+    <section class="create-cta-section" id="createCtaSection">
+        <div class="cta-background">
+            <div class="gradient-overlay"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="cta-content" data-aos="fade-up">
+                        <h2 class="cta-title">
+                            Ready to start your own
+                            <span class="gradient-text">learning community?</span>
+                        </h2>
+                        <p class="cta-description">
+                            Create a space where passionate learners can connect, share knowledge, and grow together. It's free and takes less than 5 minutes.
+                        </p>
+                        <div class="cta-actions">
+                            <button class="btn btn-light btn-lg cta-btn-primary">
+                                <span>Create Community</span>
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <button class="btn btn-outline-light btn-lg cta-btn-secondary">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Learn More</span>
+                            </button>
+                        </div>
+                        <div class="cta-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Free to create</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Easy to manage</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Rich features included</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Modal -->
+    <div class="modal fade" id="communityModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="community-header">
+                        <div class="community-avatar-large" id="modalCommunityAvatar">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="community-details">
+                            <h3 class="community-name" id="modalCommunityName">Web Development Hub</h3>
+                            <p class="community-meta" id="modalCommunityMeta">2,347 members • Very Active</p>
+                            <div class="community-tags" id="modalCommunityTags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="community-tabs">
+                                <ul class="nav nav-pills" id="communityTabs">
+                                    <li class="nav-item">
+                                        <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#posts-tab">
+                                            <i class="fas fa-comments"></i>
+                                            <span>Posts</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#resources-tab">
+                                            <i class="fas fa-book"></i>
+                                            <span>Resources</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#events-tab">
+                                            <i class="fas fa-calendar"></i>
+                                            <span>Events</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#members-tab">
+                                            <i class="fas fa-users"></i>
+                                            <span>Members</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                                
+                                <div class="tab-content" id="communityTabContent">
+                                    <div class="tab-pane fade show active" id="posts-tab">
+                                        <div class="posts-content">
+                                            <!-- Posts content will be loaded here -->
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="resources-tab">
+                                        <div class="resources-content">
+                                            <!-- Resources content will be loaded here -->
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="events-tab">
+                                        <div class="events-content">
+                                            <!-- Events content will be loaded here -->
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="members-tab">
+                                        <div class="members-content">
+                                            <!-- Members content will be loaded here -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="community-sidebar">
+                                <div class="community-description" id="modalCommunityDescription">
+                                    <h6>About</h6>
+                                    <p>Learn modern web technologies, share projects, and collaborate with fellow developers worldwide.</p>
+                                </div>
+                                
+                                <div class="community-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number" id="modalMemberCount">2,347</span>
+                                        <span class="stat-label">Members</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number" id="modalPostCount">156</span>
+                                        <span class="stat-label">Posts</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number" id="modalResourceCount">23</span>
+                                        <span class="stat-label">Resources</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="community-actions">
+                                    <button class="btn btn-primary w-100 mb-2" id="joinCommunityBtn">
+                                        <i class="fas fa-plus me-2"></i>Join Community
+                                    </button>
+                                    <button class="btn btn-outline-primary w-100 mb-2">
+                                        <i class="fas fa-share me-2"></i>Share Community
+                                    </button>
+                                    <button class="btn btn-outline-secondary w-100">
+                                        <i class="fas fa-flag me-2"></i>Report
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="footer-brand">
+                            <div class="brand-logo">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Synkria</span>
+                            </div>
+                            <p class="brand-description">
+                                Empowering learning communities and connecting professionals worldwide through innovative educational technology.
+                            </p>
+                            <div class="social-links">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-discord"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <div class="footer-section">
+                            <h6 class="footer-title">Platform</h6>
+                            <ul class="footer-links">
+                                <li><a href="communities.html">Communities</a></li>
+                                <li><a href="networking.html">Networking</a></li>
+                                <li><a href="recruitment.html">Recruitment</a></li>
+                                <li><a href="dashboard.html">Dashboard</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <div class="footer-section">
+                            <h6 class="footer-title">Resources</h6>
+                            <ul class="footer-links">
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">API Docs</a></li>
+                                <li><a href="#">Guidelines</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <div class="footer-section">
+                            <h6 class="footer-title">Company</h6>
+                            <ul class="footer-links">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <div class="footer-section">
+                            <h6 class="footer-title">Legal</h6>
+                            <ul class="footer-links">
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Cookies</a></li>
+                                <li><a href="#">GDPR</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright">
+                            &copy; 2024 Synkria. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="made-with">
+                            Made with <i class="fas fa-heart"></i> for learners worldwide
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/communities.js"></script>
+</body>
+</html>
+
