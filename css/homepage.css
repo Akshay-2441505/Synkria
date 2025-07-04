@@ -328,7 +328,6 @@
 
 /* Features Section */
 .features-section {
-  background: #121212;
   position: relative;
 }
 
@@ -433,7 +432,6 @@
 
 /* News Section */
 .news-section {
-  background: #181a1b;
   color: white;
   position: relative;
 }
@@ -1164,5 +1162,72 @@
     .hero-animated-word {
         font-size: 2.5rem;
     }
+}
+
+.svg-bg-below-hero {
+  position: relative;
+  z-index: 0;
+  background-image: url("../assets/low-poly-grid-haikei.svg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+}
+
+.svg-bg-below-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 18, 18, 0.25); /* lighter overlay for more visible SVG */
+  pointer-events: none;
+  z-index: 0;
+}
+
+.svg-bg-below-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.features-section, .news-section {
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  min-height: 1px;
+}
+
+.features-section .container, .news-section .container {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  min-height: 1px;
+}
+
+@media (max-width: 768px) {
+  .interest-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .features-grid, .news-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .interest-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .features-grid, .news-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
 
